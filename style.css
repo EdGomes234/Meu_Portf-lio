@@ -12,17 +12,17 @@ html {
 /* ----------FONTES------------- */
 @font-face {
     font-family: 'Basic';
-    src: url(../fonts/Basic-Regular.ttf) format('truetype');
+    src: url(fonts/Basic-Regular.ttf) format('truetype');
 }
 
 @font-face {
     font-family: 'ZenDots';
-    src: url(../fonts/ZenDots-Regular.ttf) format('truetype');
+    src: url(fonts/ZenDots-Regular.ttf) format('truetype');
 }
 
 @font-face {
     font-family: 'Michroma';
-    src: url(../fonts/Michroma-Regular.ttf) format('truetype');
+    src: url(fonts/Michroma-Regular.ttf) format('truetype');
 }
 
 
