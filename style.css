@@ -30,7 +30,7 @@ html {
 /*---------- Header ------------*/
 
 header {
-    height: 7vh;
+    height: 60px;
     background-color: #080404;
     display: flex;
     justify-content: center;
@@ -47,33 +47,32 @@ header.scrolled {
 }
 
 header div{
-    height: 7vh;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 header a {
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #4277D8;
     transition: 0.5s;
     text-decoration: none;
     font-family: Basic;
-
 }
 
 header .pt1{
-    margin-left: -15vh;
-    margin-right: 4vh ;
-    width: 26vh;
+    margin-left: -120px;
+    margin-right: 32px;
+    width: 160px;
 }
 
 header .pt2{
-    width: 14vh;
+    width: 110px;
 }
 
 header .pt3{
-    margin-left: 10vh;
+    margin-left: 80px;
 }
 
 header .pt2 {
@@ -108,12 +107,12 @@ header .pt2:hover::after {
 
 .media-card {
   width: fit-content;
-  height: 7vh;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 25px 25px;
-  margin-left: 10vh;
+  padding: 0 25px;
+  margin-left: 80px;
   gap: 20px;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
   background-color: transparent;
@@ -170,38 +169,25 @@ header .pt2:hover::after {
 /* ---------- Início ---------- */
 
 .Inicio {
-    height: 90vh;
+    height: calc(100vh - 60px);
     background-color: #1a1a1a;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 15vh;
-    
-    
+    gap: 80px;
 }
 
 /* Foto de Perfil */
 .Inicio img{
-    width: 45vh;
-    height: 45vh;
+    width: 360px;
+    height: 360px;
     border-radius: 100%;
     border: 0.5px solid #04040469;
-   
 }
 
-/* .Inicio img {
-    image-rendering: high-quality;
-    -webkit-font-smoothing: antialiased;
-    object-fit: cover; 
-    box-shadow: 0 0 30px rgba(66, 119, 216, 0.3); 
-} */
-
 .perfil{
-    animation: LefttoRight both;
-    animation-timeline: view();
-    animation-range: entry 15% cover 50%;
     animation: ImageReveal 0.8s ease 0.3s both;
-    box-shadow: 0 0 30px rgba(66, 119, 216, 0.3);
+    box-shadow: 0 0 30px rgba(66, 119, 216, 0.1);
 }
 
 /* Texto de apresentacao */
@@ -228,24 +214,25 @@ header .pt2:hover::after {
     font-size: 38px;
     color: #f0eeee;
     padding-bottom: 10px;
-
 }
 
 /*---------- Sobre MIM ------------*/
 
 .Sobre {
-    height: 78vh;
+    min-height: 600px;
     background-color: #1a1a1a;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    padding-bottom: 50px;
+    padding-top: 60px;
 }
 
 .Sobre h1{
     color: #2764c0;
     text-align: center;
-    padding-top: 7vh;
+    padding-top: 60px;
     font-family: Michroma;
     font-size: 2rem;
 }
@@ -255,15 +242,14 @@ header .pt2:hover::after {
     font-weight: 200;
     width: 60%;
     padding: 28px 36px;
-    font-size: 2.3vh;
+    font-size: 1.3rem;
     font-family: 'Times New Roman';
     text-align: left;
     line-height: 1.8;
     text-indent: 1em;
     border: 1px solid rgba(66, 119, 216, 0.3);
     background-color: rgba(66, 119, 216, 0.05);
-    margin-top: 2vh;
-
+    margin-top: 16px;
 }
 
 .Sobre .info{
@@ -271,10 +257,9 @@ header .pt2:hover::after {
     justify-content: center;
     align-items: center;
     width: 65%;
-    
 }
 
-.descricao{
+.Sobre .descricao{
     animation: DownToUp both;
     animation-timeline: view();
     animation-range: entry 5% cover 50%;
@@ -292,7 +277,7 @@ header .pt2:hover::after {
 .user-profile {
   width: 150px;
   height: 70px;
-  margin-top: 4vh;
+  margin-top: 32px;
   border-radius: 15px;
   cursor: pointer;
   transition: 0.3s ease;
@@ -306,7 +291,6 @@ header .pt2:hover::after {
   align-items: center;
   justify-content: center;
   text-decoration: none;
-
 }
 
 .user-profile:hover,
@@ -339,18 +323,20 @@ header .pt2:hover::after {
     font-size: 1.2rem;
     letter-spacing: 0.07em;
 }
+
 /* ---------- Projetos ---------- */
 
 .Projetos {
-    height: 80vh;
+    min-height: 640px;
     background-color: #1a1a1a;
+    padding-bottom: 80px;
 }
 
 .Projetos h1{
     color: #2764c0;
     text-align: center;
-    padding-bottom: 4vh;
-    padding-top:15vh;
+    padding-bottom: 32px;
+    padding-top: 80px;
     font-family: Michroma;
     font-size: 2rem;
     animation: ImageReveal both;
@@ -360,7 +346,7 @@ header .pt2:hover::after {
 
 .wrapper {
     width: 100%;
-    height: 50vh;
+    height: 480px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -371,7 +357,6 @@ header .pt2:hover::after {
     display: flex;
     flex-wrap: nowrap;
     justify-content: start;
-    
 }
 
 .card {
@@ -416,8 +401,6 @@ header .pt2:hover::after {
     align-items: center;
     margin: 15px;
 }
-
-
 
 .card > .row > .description {
     display: flex;
@@ -522,8 +505,6 @@ input:checked + label {
 }
 
 input:checked + label:hover {
-    /* efeito que quiser */
-    
     box-shadow: 0px 10px 40px -5px rgba(66, 119, 216, 0.6);
     filter: brightness(1.1);
 }
@@ -545,11 +526,9 @@ input:checked + label .description {
 .card[for="c4"] {
     background-image: url('Fotos/Spectra.png');
 }
-
 .card[for="c5"] {
     background-image: url('Fotos/SistSolar.png');
 }
-
 .card[for="c6"] {
     background-image: url('Fotos/Bootstrap2.png');
 }
@@ -582,12 +561,13 @@ input:checked + label .description {
 /* ---------- Badges ---------- */
 
 .Badges {
-    height: 60vh;
+    min-height: 400px;
     background-color: #1a1a1a;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 60px 0;
 }
 
 .Badges h1{
@@ -603,11 +583,9 @@ input:checked + label .description {
     animation-range: entry 5% cover 50%;
 }
 
-
-
 /* Carroussel de "ferramentas" */
 .carroussel {
-    margin: 70px auto;
+    margin: 48px auto;
     width: 90%;
     display: flex;
     overflow-x: auto;
@@ -640,8 +618,8 @@ input:checked + label .description {
 }
 
 .carroussel .group .badge-card {
-    flex: 0 0 16vh;
-    height: 18vh;
+    flex: 0 0 110px;
+    height: 120px;
     padding: 1em;
     font-size: 1.5em;
     gap: 6px;
@@ -651,13 +629,12 @@ input:checked + label .description {
     align-items: center;
     text-align: center;
     align-content: center;
-
 }
 
 /* ---------------Footer ---------- */
 footer {
     background-color: #111;
-    padding: 6vh 0 3vh;
+    padding: 48px 0 24px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -668,23 +645,23 @@ footer {
     font-family: Michroma;
     font-size: 1.8rem;
     color: #4277D8;
-    margin-bottom: 4vh;
+    margin-bottom: 32px;
     letter-spacing: 0.1em;
 }
 
 .footer-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 4vh 8vw;
+    gap: 32px 8vw;
     width: 60%;
-    margin-bottom: 4vh;
+    margin-bottom: 32px;
 }
 
 .footer-col {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.2vh;
+    gap: 10px;
     text-align: center;
 }
 
@@ -694,9 +671,9 @@ footer {
     color: #4277D8;
     letter-spacing: 0.15em;
     text-transform: uppercase;
-    margin-bottom: 0.5vh;
+    margin-bottom: 4px;
     border-bottom: 1px solid rgba(66, 119, 216, 0.3);
-    padding-bottom: 0.8vh;
+    padding-bottom: 8px;
     width: 100%;
 }
 
@@ -720,9 +697,9 @@ footer {
     font-family: Basic;
     font-size: 0.8rem;
     color: #555;
-    margin-top: 2vh;
+    margin-top: 16px;
     border-top: 1px solid rgba(255,255,255,0.05);
-    padding-top: 2vh;
+    padding-top: 16px;
     width: 60%;
     text-align: center;
 }
@@ -760,7 +737,6 @@ footer {
         opacity: 1;
         filter: blur(0);
         transform: translateX(0);
-        
     }
 }
 
@@ -774,7 +750,6 @@ footer {
         opacity: 1;
         filter: blur(0);
         transform: translateX(0);
-        
     }
 }
 
@@ -801,7 +776,6 @@ footer {
     to {
         opacity: 1;
         transform: translateY(0);
-        
     }
 }
 
