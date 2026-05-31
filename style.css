@@ -54,7 +54,7 @@ header div{
 }
 
 header a {
-    font-size: 2.1vh;
+    font-size: 1rem;
     color: #4277D8;
     transition: 0.5s;
     text-decoration: none;
@@ -247,7 +247,7 @@ header .pt2:hover::after {
     text-align: center;
     padding-top: 7vh;
     font-family: Michroma;
-    font-size: 4vh;
+    font-size: 2rem;
 }
 
 .Sobre .descricao {
@@ -352,7 +352,7 @@ header .pt2:hover::after {
     padding-bottom: 4vh;
     padding-top:15vh;
     font-family: Michroma;
-    font-size: 4vh;
+    font-size: 2rem;
     animation: ImageReveal both;
     animation-timeline: view();
     animation-range: entry 5% cover 50%;
@@ -594,7 +594,7 @@ input:checked + label .description {
     color: #2764c0;
     text-align: center;
     font-family: Michroma;
-    font-size: 4vh;
+    font-size: 2rem;
 }
 
 .Badges .titulo{
@@ -666,7 +666,7 @@ footer {
 
 .footer-titulo {
     font-family: Michroma;
-    font-size: 3.5vh;
+    font-size: 1.8rem;
     color: #4277D8;
     margin-bottom: 4vh;
     letter-spacing: 0.1em;
@@ -690,7 +690,7 @@ footer {
 
 .footer-col h4 {
     font-family: Michroma;
-    font-size: 1.4vh;
+    font-size: 0.75rem;
     color: #4277D8;
     letter-spacing: 0.15em;
     text-transform: uppercase;
@@ -703,7 +703,7 @@ footer {
 .footer-col p,
 .footer-col a {
     font-family: Basic;
-    font-size: 1.8vh;
+    font-size: 1rem;
     color: #a3a3a3;
     text-decoration: none;
     transition: color 0.3s ease;
@@ -718,7 +718,7 @@ footer {
 
 .footer-copy {
     font-family: Basic;
-    font-size: 1.4vh;
+    font-size: 0.8rem;
     color: #555;
     margin-top: 2vh;
     border-top: 1px solid rgba(255,255,255,0.05);
